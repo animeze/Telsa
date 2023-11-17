@@ -1,5 +1,7 @@
+import python
+
 @Bot.on_message(filters.command('start') & filters.private)
-async def not_joined(client: Client, message: Message):
+reply(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
